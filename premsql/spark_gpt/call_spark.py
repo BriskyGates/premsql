@@ -20,8 +20,8 @@ async def main():
     # Generate authenticated URL
     ws_url = AuthUtils.assemble_request_url(
         "ws://36.111.151.113:33013/1qaz",
-        "1DB3D20E8CD062209EDD",
-        "B170A42F33C3430492A663102CEE6045"
+        "1DB3D20E8CD062209E88",
+        "5C1C7540A47543A8B19CABE63B191BE9"
     )
 
     async def message_handler(websocket):

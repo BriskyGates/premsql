@@ -20,8 +20,8 @@ class AuthUtils:
     @staticmethod
     def assemble_request_url(request_url: str, api_key: str, api_secret: str) -> str:
         # Convert WebSocket URL to HTTP URL for parsing
-        # http_request_url = request_url.replace("ws://", "http://").replace("wss://", "https://")
-        http_request_url=request_url
+        http_request_url = request_url.replace("ws://", "http://").replace("wss://", "https://")
+        # http_request_url=request_url
         url = urlparse(http_request_url)
 
         # Generate UTC timestamp
